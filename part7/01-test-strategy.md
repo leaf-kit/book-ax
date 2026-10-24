@@ -22,23 +22,15 @@
 
 문제 하나를 풀 때 거치는 순서를 그림으로 보면 이렇다.
 
-```mermaid
-flowchart TD
-    A["문항 읽기"] --> B["함정 유형 판별"]
-    B --> C["구조로 접근"]
-    C --> D["답 고르기"]
-    D --> E["다음 문항"]
-    B -.->|"막히면"| F["건너뛰고 표시해두기"]
-    F -.-> E
-    style A fill:#f7f9ff
-    style B fill:#fff4e6
-    style C fill:#fffdf5
-    style D fill:#f7fff9
-    style E fill:#f7f9ff
-    style F fill:#f5f5f5
-```
+![문항을 푸는 순서와, 막혔을 때 건너뛰는 경로](../images/diagram-7-1-test-strategy.jpg)
+[그림] 막히면 건너뛰고 표시해두는 경로가 있어야 시간 관리가 된다.
+
 
 막혔을 때 점선을 따라가는 것이 핵심이다. 구조로 접근하는 단계에서 답이 안 보이면, 그 자리에 멈추지 않고 표시만 해둔 채 다음 문항으로 넘어간다.
+
+![검사 시간관리와 함정 유형에 대비하는 그림](../images/illust-7-1-test-strategy.jpg)
+[그림] 함정 유형을 먼저 판별해야 시간을 낭비하지 않는다.
+
 
 ## 자주 걸리는 함정 유형
 
